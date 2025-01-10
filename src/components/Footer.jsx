@@ -1,5 +1,6 @@
 import React from 'react'
 import logo from "../assets/logo.png";
+import { FaFacebook, FaTelegram, FaFacebookMessenger } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -27,7 +28,11 @@ const Footer = () => {
           </div>
         </div>
         <div className="col l-0-1 l-1">
-          FB TL WA
+          <div className="row foot-social">
+            <FaFacebook/>
+            <FaTelegram/>
+            <FaFacebookMessenger/>
+          </div>
         </div>
       </div>
       <div className="row copy">

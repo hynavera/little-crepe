@@ -8,6 +8,9 @@
 /* Navbar */
 .header {
   background-color: var(--m1);
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
 .navbar ul {
   list-style: none;
@@ -15,11 +18,11 @@
   font-weight: 800;  
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 }
 .navbar li {
-  /* display: inline-block; */
-  padding: 10px 40px;
+  display: inline-block;
+  padding: 10px 2em;
 }
 .navbar a {
   color: var(--ac1);
@@ -29,7 +32,7 @@
   text-decoration: none;
 }
 .logo-header {
-  padding: 0 !important;
+  padding: 0 1em !important;
   div {
     width: 300px;
     height: 80px;
@@ -72,4 +75,25 @@
     border-top: 1px solid #353232;
     display: inline-block;  
   }
+}
+.foot-social {
+  flex-direction: column;
+  gap: 0.8rem;
+  svg {
+    font-size: 42px;
+    fill: var(--ac1);
+  }
+}
+
+
+h1 {
+  font-family: "Markazi Text", serif;
+  font-size: 64px;
+  line-height: 60px;
+  font-weight: 600;
+}
+h4 {
+  font-size: 22px;
+  line-height: 30px;
+  font-weight: 600;
 }

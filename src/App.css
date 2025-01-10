@@ -149,9 +149,14 @@ button.btn2 {
   color: var(--ac1);
   border: 2px solid var(--ac1);
 }
-.map-container {
-  height: 50vh;
-  width: 100%;
-  border-radius: 20px;
-  overflow: hidden;
+.chip {
+  background-color: var(--m2);
+  padding: 2px 20px;
+  display: inline-block;
+  border-radius: 16px;
+  color: var(--c2);
+}
+.hr {
+  margin-left: 30%;
+  height: 3rem;
 }

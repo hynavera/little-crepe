@@ -1,0 +1,45 @@
+.order-layout {
+  height: 80vh;
+  width: 80vw;
+  margin: 0 auto;
+  background-color: aqua;
+  border-radius: 16px;
+  position: relative;
+  overflow: scroll;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+.order-layout:-webkit-scrollbar {
+  display: none;
+}
+.close-icon {
+  position: sticky;
+  top: 0;
+  justify-content: flex-end;
+  padding: 10px;
+  svg {
+    font-size: 30px;
+    path {fill: var(--ac1);}
+  }
+}
+.order-wide {
+  padding: 10px;
+}
+.odlt-input {
+  padding: 10px 0;
+  .order-input {
+    input {
+      width: 100%;
+      border-radius: 8px;
+      padding: 6px 10px;
+      /* border: 1px solid #353232; */
+      background: none;
+    }
+  }
+}
+.odlt-btn {
+  padding: 20px 0;
+  button {
+    width: 100%;
+  }
+}

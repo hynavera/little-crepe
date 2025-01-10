@@ -148,6 +148,7 @@ const Home = () => {
               <APIProvider apiKey={'AIzaSyDTBdN8scOp2wngX5Eim0IbtpzYHgIUABY'} onLoad={() => console.log('Maps API has loaded.')}>
                 <CustomMap />
               </APIProvider>
+              <button id='map-btn'>Get Directions</button>
             </div>
           </div>
         </div>

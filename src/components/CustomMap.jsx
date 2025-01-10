@@ -3,7 +3,7 @@ import { Map, Marker} from "@vis.gl/react-google-maps";
 
 const CustomMap = () => {
   const [markerLocation, setMarkerLocation] = useState({
-    lat: 21.06201960908053, lng: 105.9045977938713
+    lat: 21.048928962107464, lng: 105.86452406236624
   });
 
   return (
@@ -15,7 +15,7 @@ const CustomMap = () => {
         gestureHandling={"greedy"}
         disableDefaultUI
       >
-        {/* <Marker position={markerLocation} /> */}
+        <Marker position={markerLocation} />
       </Map>
     </div>
   );

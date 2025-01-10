@@ -3,7 +3,7 @@
   --m1: #F5D76E;
   --m2: #9C2121;
   --c1: #FCF1CD;
-
+  --c2: #FEF5ED;
 }
 /* Navbar */
 .header {
@@ -91,9 +91,61 @@ h1 {
   font-size: 64px;
   line-height: 60px;
   font-weight: 600;
+  color: var(--ac1);
 }
+h2 {
+  font-family: "Markazi Text", serif;
+  font-size: 40px;
+  font-weight: 600;
+  color: var(--ac1);
+}
+h3 {
+  font-family: "Markazi Text", serif;
+  font-size: 34px;
+  font-weight: 600;
+}
+
 h4 {
   font-size: 22px;
   line-height: 30px;
-  font-weight: 600;
+  font-weight: 500;
+  color: var(--m2);
+}
+p.p0 {
+  font-size: 18px;
+  line-height: 130%;
+}
+p.p1 {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 130%;
+}
+
+button {
+  border-radius: 24px;
+  border: 0;
+  width: 250px;
+  height: 50px;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: normal;
+  cursor: pointer;
+}
+button.btn1 {
+  background: var(--ac1);
+  color: #FFFBF8;
+}
+.btn1:hover {
+  background: none;
+  color: var(--ac1);
+  border: 2px solid var(--ac1);
+}
+button.btn2 {
+  background-color: var(--m1);
+  color: var(--ac1);
+}
+.btn2:hover {
+  background: var(--c2);
+  color: var(--ac1);
+  border: 2px solid var(--ac1);
 }

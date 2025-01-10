@@ -5,6 +5,8 @@ import rvImg2 from "../assets/u2.jpg"
 import rvImg3 from "../assets/u3.jpg"
 import rvImg4 from "../assets/u4.jpg"
 import { HiOutlineChevronDown, HiOutlineChevronUp } from "react-icons/hi";
+import CustomMap from './CustomMap';
+import { APIProvider } from "@vis.gl/react-google-maps";
 
 const testimonials = [
   {name: "Nguyen, Jane", review: "I had the crepe filled with chestnut butter and it was like tasting heaven.", img: rvImg1},
@@ -106,8 +108,10 @@ const Home = () => {
               <button className='btn2'>Book a Table</button>
             </div>
             <div className="order-img">
-              <img src="https://cdn.pixabay.com/photo/2025/01/10/10/51/10-51-19-802_960_720.png" alt="" />
+              <img src="https://cdn.pixabay.com/photo/2016/11/23/13/45/celebration-1852926_960_720.jpg" alt="" id='ev-im1' />
+              <img src="https://cdn.pixabay.com/photo/2025/01/10/10/51/10-51-19-802_960_720.png" alt="" id='ev-im2'/>
             </div>
+
           </div>
         </div>
       </section>
@@ -140,6 +144,11 @@ const Home = () => {
           </div>
           <div className="col l-5">
             <h3>VISIT US</h3>
+            <div className="map">
+              <APIProvider apiKey={'AIzaSyDTBdN8scOp2wngX5Eim0IbtpzYHgIUABY'} onLoad={() => console.log('Maps API has loaded.')}>
+                <CustomMap />
+              </APIProvider>
+            </div>
           </div>
         </div>
       </section>

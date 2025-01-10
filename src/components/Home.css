@@ -9,13 +9,13 @@
   }
 }
 .hero-menu {
-  height: 95vh;
+  height: 90vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 1%;
   button {
-    margin-top: 1rem;
+    margin-top: 10px;
   }
 }
 .hero-circle-row {
@@ -122,8 +122,24 @@
   }
   .order-img {
     left: 50%;
-    width: 40vw;
+    width: 45vw;
+    img {
+      height: 90%;
+      width: 85%;
+      border-radius: 48px;
+    }
   }
+}
+#ev-im1 {
+  position: absolute;
+  right: 0;
+  top: 0;
+  opacity: 0.7;
+}
+#ev-im2 {
+  position: absolute;
+  left: 0;
+  bottom: 0;
 }
 .faq-row {
   justify-content: space-around;

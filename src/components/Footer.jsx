@@ -40,6 +40,9 @@ const Footer = () => {
         <p>(C) Copyright 2024, Quatre-Crepes Hanoi.</p>
       </div>
       </div>
+      <div className="copyright" style={{padding: "10px 10px", background: "var(--ac1)"}}>
+        <p className='p0' style={{textAlign: "right", color: "#fff"}}>Designed & Developed by Hynavera.</p>
+      </div>
     </div>
   )
 }

@@ -4,6 +4,7 @@ import { CgClose } from "react-icons/cg";
 import { Outlet, useLocation } from 'react-router-dom';
 import cartImg from "../../assets/cart.svg"
 import { FaAngleRight } from "react-icons/fa6";
+import { useSelector, useDispatch } from "react-redux";
 
 
 const OrderLayout = () => {
@@ -18,6 +19,15 @@ const OrderLayout = () => {
       setShowPay(false);
     }
   })
+
+  const [totalQuantity, setTotalQuantity] = useState(0);
+  const cartNum = useSelector(store => store.cart.cartItems);
+  useEffect(() => {
+    let total = 0;
+    cartNum.forEach(item => total += item.quantity);
+    setTotalQuantity(total);
+  }, [cartNum]);
+  // console.log(cartNum.length);
 
   return (
     <div className='order-layout'>
@@ -50,7 +60,7 @@ const OrderLayout = () => {
             <div className="col l-2">
               <div className="cart">
                 <img src={cartImg} alt="" />
-                <div className="cart-num">10</div>
+                <div className="cart-num">{totalQuantity}</div>
               </div>
             </div>
             <div className="col l-0-3 l-4">

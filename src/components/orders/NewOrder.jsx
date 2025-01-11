@@ -1,5 +1,7 @@
 import React, {useEffect, useState} from 'react'
 import { FaAngleRight } from "react-icons/fa6";
+import { useSelector, useDispatch } from 'react-redux';
+import { addItemToCart, removeItemFromCart } from './Cart/cartSlice';
 
 const NewOrder = () => {
   const [dishes, setDishes] = useState([]);
@@ -8,6 +10,19 @@ const NewOrder = () => {
     .then(res => res.json())
     .then((data => setDishes(data)))
   }, [])
+
+  const dispatch = useDispatch();
+  const [addedToCart, setAddedToCart] = useState([]);
+  const handleAddToCart = (dish) => {
+    dispatch(addItemToCart(dish));
+    setAddedToCart([...addedToCart, dish.name]);
+    console.log(dish.name);
+  };
+  const handleRemoveFromCart = (dish) => {
+    dispatch(removeItemFromCart(dish));
+    setAddedToCart(addedToCart.filter(item => item !== dish.name)); 
+    console.log(dish.name, "remove");
+  }
 
   return (
     <div className='order-wide'>
@@ -45,7 +60,11 @@ const NewOrder = () => {
                   <div className="dprice">{dish.price}</div>
                 </div>
                 <div className="add-btn">
-                  <button className='btn1'>Add</button>
+                  {addedToCart.includes(dish.name) ? (
+                    <button className='btn2' onClick={() => handleRemoveFromCart(dish)}>Added</button>
+                  ) : (
+                    <button className='btn1' onClick={() => handleAddToCart(dish)}>Add</button>
+                  )}
                 </div>
               </div>
             </div>

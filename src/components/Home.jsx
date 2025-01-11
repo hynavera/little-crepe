@@ -1,9 +1,9 @@
 import React from 'react';
 import "./Home.css";
-import rvImg1 from "../assets/u1.jpg"
-import rvImg2 from "../assets/u2.jpg"
-import rvImg3 from "../assets/u3.jpg"
-import rvImg4 from "../assets/u4.jpg"
+import rvImg1 from "../assets/u1.png"
+import rvImg2 from "../assets/u2.png"
+import rvImg3 from "../assets/u3.png"
+import rvImg4 from "../assets/u4.png"
 import { HiOutlineChevronDown, HiOutlineChevronUp } from "react-icons/hi";
 import CustomMap from './CustomMap';
 import { APIProvider } from "@vis.gl/react-google-maps";

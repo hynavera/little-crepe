@@ -14,15 +14,15 @@ const Footer = () => {
           <div className="row">
             <div className="col l-0-1 l-5">
               <ul>
-                <li>Address: 320 Lincoln Ave, Long Bien, Hanoi</li>
-                <li>Phone: (01) 503-45-8377</li>
-                <li>Email: quatre-crepes@email.com</li>
+                <li><p>Address: 320 Lincoln Ave, Long Bien, Hanoi</p></li>
+                <li><p>Phone: (01) 503-45-8377</p></li>
+                <li><p>Email: quatre-crepes@email.com</p></li>
               </ul>
             </div>
             <div className="col l-0-1 l-5">
               <ul>
-                <li>Opening hours: Mon - Sun: 2 PM - 10 PM</li>
-                <li>Online service hours: Mon - Sun: 9 AM - 8 PM</li>
+                <li><p>Opening hours: Mon - Sun: 2 PM - 10 PM</p></li>
+                <li><p>Online service hours: Mon - Sun: 9 AM - 8 PM</p></li>
               </ul>
             </div>
           </div>
@@ -41,7 +41,7 @@ const Footer = () => {
       </div>
       </div>
       <div className="copyright" style={{padding: "10px 10px", background: "var(--ac1)"}}>
-        <p className='p0' style={{textAlign: "right", color: "#fff"}}>Designed & Developed by Hynavera.</p>
+        <p className='p0 wide' style={{textAlign: "right", color: "#fff"}}>Designed & Developed by Hynavera.</p>
       </div>
     </div>
   )

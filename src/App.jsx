@@ -6,7 +6,6 @@ import Home from './components/Home';
 import OrderLayout from './components/orders/OrderLayout';
 import Location from './components/orders/Location';
 import NewOrder from './components/orders/NewOrder';
-import "./server";
 
 function App() {
   return (

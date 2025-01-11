@@ -23,26 +23,86 @@
     path {fill: var(--ac1);}
   }
 }
+.order-wide {
+  padding: 0 3em 1em;
+}
 
 /* Location */
-.order-wide {
-  padding: 10px;
-}
 .odlt-input {
   padding: 10px 0;
+  align-items: center;
   .order-input {
     input {
       width: 100%;
       border-radius: 8px;
-      padding: 6px 10px;
+      padding: 10px;
       /* border: 1px solid #353232; */
       background: none;
     }
   }
+  .row {
+    align-items: center;
+    gap: 10px;
+  }
+}
+.check-btn {
+  font-size: 42px;
+  fill: var(--m2);
 }
 .odlt-btn {
   padding: 20px 0;
   button {
     width: 100%;
+  }
+}
+
+/* New Order */
+.new-title {
+  .row {
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+  }
+}
+.crepe-layout {
+  margin-top: 2em;
+}
+.dish-card {
+  border-radius: 16px;
+  overflow: hidden;
+  .dimage {
+    width: 100%;
+    height: 200px;
+    img {
+      object-fit: cover;
+      height: 100%;
+      width: 100%;
+    }
+  }
+  .dish-info {
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .dish-name {
+      height: 250px;
+      .dname {
+        color: var(--n1);
+        font-size: 24px;
+        font-weight: 400;
+      }
+    }
+    .dish-add {
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+}
+.dish-price {
+  align-items: baseline;
+  gap: 10px;
+  .dprice {
+    font-weight: 500;
+    font-size: 22px;
+    color: var(--m2);
   }
 }

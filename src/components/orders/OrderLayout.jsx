@@ -1,7 +1,7 @@
 import React from 'react'
 import "./OrderLayout.css"
 import { CgClose } from "react-icons/cg";
-import Location from './Location';
+import { Outlet } from 'react-router-dom';
 
 const OrderLayout = () => {
   return (
@@ -9,7 +9,7 @@ const OrderLayout = () => {
       <div className="close-icon row">
         <CgClose/>
       </div>
-      <Location/>
+      <Outlet/>
     </div>
   )
 }

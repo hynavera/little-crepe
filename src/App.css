@@ -4,6 +4,7 @@
   --m2: #9C2121;
   --c1: #FCF1CD;
   --c2: #FEF5ED;
+  --n1: #353232;
 }
 /* Navbar */
 .header {
@@ -102,28 +103,26 @@ h3 {
   font-size: 34px;
   font-weight: 600;
 }
-
 h4 {
   font-size: 22px;
-  line-height: 30px;
   font-weight: 500;
   color: var(--m2);
 }
+p {
+  line-height: 160%;
+}
 p.p0 {
   font-size: 18px;
-  line-height: 130%;
 }
 p.p1 {
   font-size: 18px;
   font-weight: 400;
-  line-height: 130%;
 }
 
 button {
   border-radius: 24px;
   border: 0;
-  width: 250px;
-  height: 50px;
+  padding: 12px 20px;
   font-weight: 500;
   font-size: 22px;
   line-height: normal;
@@ -147,6 +146,9 @@ button.btn2 {
   color: var(--ac1);
   border: 2px solid var(--ac1);
 }
+.hr {
+  height: 3em;
+}
 .chip {
   background-color: var(--m2);
   padding: 2px 20px;
@@ -154,7 +156,20 @@ button.btn2 {
   border-radius: 16px;
   color: var(--c2);
 }
-.hr {
-  margin-left: 30%;
-  height: 3rem;
+
+/* Chat support */
+.chat-sup {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 99;
+  .row {
+    justify-content: flex-end;
+  }
+}
+#chat-sup {
+  background-color: var(--m2);
+  color: #FFFBF8;
+  border-radius: 16px 16px 0 0;
+  margin-right: 5px;
 }

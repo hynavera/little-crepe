@@ -70,7 +70,9 @@ const Home = () => {
             <p>
             Lorem ipsum dolor sit amet, consecte tur adipis cing elit, sed do eiusmod tempor incididu nt  Lorem ipsum dolor sit amet, consecte tur adipiscing elit, sed do eiusm od.
             </p>
-            <button className='btn1'>Order Now</button>
+            <div className="row">
+              <button className='btn1 col l-6'>Order Now</button>
+            </div>
           </div>
         </div>
         <div className="row">
@@ -105,7 +107,9 @@ const Home = () => {
               <p>
               Lorem ipsum dolor sit amet, consecte tur adipis cing elit, sed do eiusmod tempor incididu nt  Lorem ipsum dolor sit amet, consecte tur adipiscing elit, sed do eiusm od.
               </p>
-              <button className='btn2'>Book a Table</button>
+              <div className="row">
+                 <button className='btn2 col l-6'>Book a Table</button>
+              </div>
             </div>
             <div className="order-img">
               <img src="https://cdn.pixabay.com/photo/2016/11/23/13/45/celebration-1852926_960_720.jpg" alt="" id='ev-im1' />

@@ -121,24 +121,29 @@ const Home = () => {
             <h3>FAQ</h3>
             <div className="faq-layout">
               <div className="faq-qt row">
-                <p>Where do you deliver?</p>
-                <HiOutlineChevronDown/>
+                <p className='ques'>Where do you deliver?</p>
+                <p className='ans'>Lorem ipsum dolor sit amet, consecte tur adipis cing elit, sed do eiusmod tempor incididu nt</p>
+                <HiOutlineChevronDown className='arr'/>
               </div>
               <div className="faq-qt row">
-                <p>How long does it take to receive my food order?</p>
-                <HiOutlineChevronDown/>
+                <p className='ques'>How long does it take to receive my food order?</p>
+                <p className='ans'>Lorem ipsum dolor sit amet, consecte tur adipis cing elit, sed do eiusmod tempor incididu nt</p>
+                <HiOutlineChevronDown className='arr'/>
               </div>
               <div className="faq-qt row">
-                <p>How much does the delivery cost?</p>
-                <HiOutlineChevronDown/>
+                <p className='ques'>How much does the delivery cost?</p>
+                <p className='ans'>Lorem ipsum dolor sit amet, consecte tur adipis cing elit, sed do eiusmod tempor incididu nt</p>
+                <HiOutlineChevronDown className='arr'/>
               </div>
               <div className="faq-qt row">
-                <p>How much does the reservation cost?</p>
-                <HiOutlineChevronDown/>
+                <p className='ques'>How much does the reservation cost?</p>
+                <p className='ans'>Lorem ipsum dolor sit amet, consecte tur adipis cing elit, sed do eiusmod tempor incididu nt</p>
+                <HiOutlineChevronDown className='arr'/>
               </div>
               <div className="faq-qt row">
-                <p>Who can I contact with questions?</p>
-                <HiOutlineChevronDown/>
+                <p className='ques'>Who can I contact with questions?</p>
+                <p className='ans'>Lorem ipsum dolor sit amet, consecte tur adipis cing elit, sed do eiusmod tempor incididu nt</p>
+                <HiOutlineChevronDown className='arr'/>
               </div>
             </div>
           </div>

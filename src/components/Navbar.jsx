@@ -31,7 +31,7 @@ const Navbar = () => {
             </Link>
           </li>
           <li onClick={checkHandler}>
-            <Link to="/">ORDERS</Link>
+            <Link to="/order">ORDERS</Link>
             </li>
           <li onClick={checkHandler}>
             <Link to="/">RESERVATIONS</Link>

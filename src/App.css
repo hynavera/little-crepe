@@ -8,8 +8,6 @@
 /* Navbar */
 .header {
   background-color: var(--m1);
-  display: flex;
-  justify-content: center;
   width: 100%;
 }
 .navbar ul {
@@ -18,11 +16,11 @@
   font-weight: 800;  
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 .navbar li {
   display: inline-block;
-  padding: 10px  2em;
+  padding: 10px;
 }
 .navbar a {
   color: var(--ac1);
@@ -32,7 +30,7 @@
   text-decoration: none;
 }
 .logo-header {
-  padding: 0 1em !important;
+  padding: 0 !important;
   div {
     width: 300px;
     height: 76px;
@@ -70,7 +68,7 @@
   align-items: flex-end;
   gap: 10px;
   .foot-line {
-    width: 40vw;
+    width: 50vw;
     height: 0;
     border-top: 1px solid #353232;
     display: inline-block;  
@@ -78,7 +76,7 @@
 }
 .foot-social {
   flex-direction: column;
-  gap: 0.8rem;
+  gap: 0.6rem;
   svg {
     font-size: 42px;
     fill: var(--ac1);

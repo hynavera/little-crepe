@@ -1,16 +1,17 @@
 .order-layout {
-  height: 80vh;
+  height: 85vh;
   width: 80vw;
   margin: 0 auto;
-  background-color: aqua;
+  background-color: var(--c2);
   border-radius: 16px;
   position: relative;
   overflow: scroll;
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
 }
 .order-layout:-webkit-scrollbar {
-  display: none;
+  display: none; /* Chrome */
 }
 .close-icon {
   position: sticky;
@@ -22,6 +23,8 @@
     path {fill: var(--ac1);}
   }
 }
+
+/* Location */
 .order-wide {
   padding: 10px;
 }

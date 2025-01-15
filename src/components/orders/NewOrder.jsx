@@ -13,16 +13,15 @@ const NewOrder = () => {
   }, [])
 
   const dispatch = useDispatch();
-  const [addedToCart, setAddedToCart] = useState([]);
+  const cartItems = useSelector((state) => state.cart.cartItems); // Access cart items from Redux store
+
   const handleAddToCart = (dish) => {
     dispatch(addItemToCart(dish));
-    setAddedToCart([...addedToCart, dish.name]);
     console.log(dish.name);
   };
   const handleRemoveFromCart = (dish) => {
     dispatch(removeItemFromCart(dish));
-    setAddedToCart(addedToCart.filter(item => item !== dish.name)); 
-    console.log(dish.name, "remove");
+    console.log(dish, "remove");
   }
 
   return (
@@ -61,8 +60,8 @@ const NewOrder = () => {
                   <div className="dprice">{dish.price}</div>
                 </div>
                 <div className="add-btn">
-                  {addedToCart.includes(dish.name) ? (
-                    <button className='btn2' onClick={() => handleRemoveFromCart(dish)}>Added</button>
+                  {cartItems.some((item) => item.name === dish.name) ? (
+                    <button className='btn2' onClick={() => handleRemoveFromCart(dish.name)}>Added</button>
                   ) : (
                     <button className='btn1' onClick={() => handleAddToCart(dish)}>Add</button>
                   )}

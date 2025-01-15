@@ -66,6 +66,7 @@
     color: var(--m2);
   }
 }
+
 /* Location */
 .odlt-input {
   padding: 10px 0;
@@ -167,6 +168,9 @@
     font-size: 22px;
     color: var(--m2);
   }
+}
+.dish-row {
+  row-gap: 20px;
 }
 .card-linear {
   position: absolute;

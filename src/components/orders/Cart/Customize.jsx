@@ -1,26 +1,23 @@
 import React from 'react'
 import { useSelector, useDispatch } from 'react-redux';
-import { removeItemFromCart, increaseItemQuantity, decreaseItemQuantity, clearCart } from './cartSlice';
+// import { removeItemFromCart, increaseItemQuantity, decreaseItemQuantity, clearCart } from './cartSlice';
+import Popup from 'reactjs-popup';
+import DishItem from './DishItem';
+
 
 const Customize = () => {
   const cartItems = useSelector(state => state.cart.cartItems);
-  // Calculate total cost based on quantity for an item
-  const calculateTotalCost = (item) => {
-    let totalCost = 0;
-    totalCost = item.price * item.quantity;
-    return totalCost;
-  }; 
 
-  const dispatch = useDispatch();
-  const handleRemove = (dish) => {
-    dispatch(removeItemFromCart(dish));
-  };
-  const handleIncrement = (item) => {
-    dispatch(increaseItemQuantity(item));
-  };
-  const handleDecrement = (item) => {
-   dispatch(decreaseItemQuantity(item));
-  };
+  // const dispatch = useDispatch();
+  // const handleRemove = (dish) => {
+  //   dispatch(removeItemFromCart(dish));
+  // };
+  // const handleIncrement = (item) => {
+  //   dispatch(increaseItemQuantity(item));
+  // };
+  // const handleDecrement = (item) => {
+  //  dispatch(decreaseItemQuantity(item));
+  // };
   // const handleClearCart = () => {
   //   dispatch(clearCart());
   // };
@@ -34,11 +31,11 @@ const Customize = () => {
               <h3>Your Order</h3>
             </div>
           </div>
-        </div>
         <div className="row dish-row">
           {cartItems.map((item) => (
-            <div key={item.name} className="col l-3 dish-card-lt">
+          <div key={item.name} className="col l-3 dish-card-lt">
           <div className="dish-card">
+            <div className="card-linear"></div>
             <div className="dimage">
               <img src={item.image} alt="" />
             </div>
@@ -53,23 +50,30 @@ const Customize = () => {
                   <div className="dprice">{item.price}</div>
                 </div>
                 <div className="add-btn">
-                  <div className="row">
-                    <div>x</div>
-                    <div>{item.quantity}</div>
+                <Popup trigger={
+                    <button className="btn2">
+                      x {item.quantity}
+                    </button>
+                }
+                >
+                  <div className="popup-container">
+                    <DishItem {...item} key={item.name}/>
                   </div>
+                </Popup>
                 </div>
-                <div className="add-btn">
+                {/* <div className="add-btn">
                   <div className="row">
                     <button onClick={() => handleDecrement(item.name)}>-</button>
                     <button onClick={() => handleIncrement(item.name)}>+</button>
                     <button onClick={() => handleRemove(item.name)}>Remove</button>
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
-            </div>
+          </div>
           ))}
+        </div>
         </div>
       </section>
     </div>

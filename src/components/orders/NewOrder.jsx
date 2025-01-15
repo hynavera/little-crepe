@@ -2,7 +2,6 @@ import React, {useEffect, useState} from 'react'
 import { FaAngleRight } from "react-icons/fa6";
 import { useSelector, useDispatch } from 'react-redux';
 import { addItemToCart, removeItemFromCart } from './Cart/cartSlice';
-import Customize from './Cart/Customize';
 
 const NewOrder = () => {
   const [dishes, setDishes] = useState([]);
@@ -46,6 +45,7 @@ const NewOrder = () => {
         {category.crepes.map((dish) => (
         <div key={dish.name} className="col l-3 dish-card-lt">
           <div className="dish-card">
+            <div className="card-linear"></div>
             <div className="dimage">
               <img src={dish.image} alt="" />
             </div>
@@ -75,7 +75,6 @@ const NewOrder = () => {
       </div>
       ))}
       </section>
-      <Customize/>
     </div>
   )
 }

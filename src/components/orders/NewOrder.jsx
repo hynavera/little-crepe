@@ -2,6 +2,7 @@ import React, {useEffect, useState} from 'react'
 import { FaAngleRight } from "react-icons/fa6";
 import { useSelector, useDispatch } from 'react-redux';
 import { addItemToCart, removeItemFromCart } from './Cart/cartSlice';
+import Customize from './Cart/Customize';
 
 const NewOrder = () => {
   const [dishes, setDishes] = useState([]);
@@ -75,6 +76,7 @@ const NewOrder = () => {
       </div>
       ))}
       </section>
+      <Customize/>
     </div>
   )
 }

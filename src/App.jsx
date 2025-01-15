@@ -6,6 +6,7 @@ import Home from './components/Home';
 import OrderLayout from './components/orders/OrderLayout';
 import Location from './components/orders/Location';
 import NewOrder from './components/orders/NewOrder';
+import Customize from './components/orders/Cart/Customize';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path='/order' element={<OrderLayout/>}>
           <Route index element={<Location/>}/>
           <Route path='new-order' element={<NewOrder/>}/>
+          <Route path='customize' element={<Customize/>}/>
         </Route>
       </Routes>
       <div className='chat-sup'>

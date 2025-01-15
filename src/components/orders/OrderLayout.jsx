@@ -22,10 +22,21 @@ const OrderLayout = () => {
 
   const [totalQuantity, setTotalQuantity] = useState(0);
   const cartNum = useSelector(store => store.cart.cartItems);
+  
+  const [totalAmount, setTotalAmount] = useState(0);
+  const cartCost = useSelector(state => state.cart.cartItems);
+  
   useEffect(() => {
-    let total = 0;
-    cartNum.forEach(item => total += item.quantity);
-    setTotalQuantity(total);
+    let totalNum = 0;
+    cartNum.forEach(item => totalNum += item.quantity);
+    setTotalQuantity(totalNum);  
+    
+    // Calculate total amount for all products in the cart
+    let totalCost = 0;
+    cartCost.forEach(item => {
+      totalCost += item.price * item.quantity;
+    });
+    setTotalAmount(totalCost);
   }, [cartNum]);
   // console.log(cartNum.length);
 
@@ -66,7 +77,7 @@ const OrderLayout = () => {
             <div className="col l-0-3 l-4">
               <div className="row p-amount">
                 <h4>Total Amount (USD)</h4>
-                <h4>0</h4>
+                <h4>{totalAmount}</h4>
               </div>
             </div>
             <div className="col l-3">

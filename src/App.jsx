@@ -1,5 +1,5 @@
 import './App.css';
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Home from './components/Home';
@@ -13,18 +13,27 @@ import Status from './components/orders/Info/Status';
 
 function App() {
   return (
-    <BrowserRouter>
+    <Router>
       <Navbar/>
       <Routes>
-        <Route path='/' element={<Home/>}/>
-        <Route path='/order' element={<OrderLayout/>}>
-          <Route index element={<Location/>}/>
-          <Route path='new-order' element={<NewOrder/>}/>
-          <Route path='customize' element={<Customize/>}/>
-          <Route path='payinfo' element={<PayInfo/>}/>
-          <Route path='confirm' element={<Confirm/>}/>
-          <Route path='status' element={<Status/>}/>
+        <Route path='/' element={<Home/>}>
+          {/* <Route path='/order' element={<OrderLayout/>}>
+            <Route index element={<Location/>}/>
+            <Route path='new-order' element={<NewOrder/>}/>
+            <Route path='customize' element={<Customize/>}/>
+            <Route path='payinfo' element={<PayInfo/>}/>
+            <Route path='confirm' element={<Confirm/>}/>
+            <Route path='status' element={<Status/>}/>
+          </Route> */}
         </Route>
+        <Route path='/order' element={<OrderLayout/>}>
+            <Route index element={<Location/>}/>
+            <Route path='new-order' element={<NewOrder/>}/>
+            <Route path='customize' element={<Customize/>}/>
+            <Route path='payinfo' element={<PayInfo/>}/>
+            <Route path='confirm' element={<Confirm/>}/>
+            <Route path='status' element={<Status/>}/>
+          </Route>
       </Routes>
       <div className='chat-sup'>
         <div className="row">
@@ -32,7 +41,7 @@ function App() {
         </div>
       </div>
       <Footer/>
-    </BrowserRouter>
+    </Router>
   )
 }
 

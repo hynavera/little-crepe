@@ -9,7 +9,7 @@
   overflow: scroll;
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.6);
 }
 .order-layout:-webkit-scrollbar {
   display: none; /* Chrome */
@@ -179,4 +179,17 @@
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, #FFF 25%);
   height: 300px;
   width: 100%;
+}
+
+.flow.step1 {
+  color: var(--m2);
+  font-weight: 500;
+}
+.flow.step2 {
+  color: var(--m2);
+  font-weight: 500;
+}
+.flow.step3 {
+  color: var(--m2);
+  font-weight: 500;
 }

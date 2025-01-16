@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import "./Home.css";
 import rvImg1 from "../assets/u1.png"
 import rvImg2 from "../assets/u2.png"
@@ -7,6 +7,9 @@ import rvImg4 from "../assets/u4.png"
 import { HiOutlineChevronDown, HiOutlineChevronUp } from "react-icons/hi";
 import CustomMap from './CustomMap';
 import { APIProvider } from "@vis.gl/react-google-maps";
+import { useNavigate, Outlet } from 'react-router-dom'; 
+import { CgClose } from "react-icons/cg";
+
 
 const testimonials = [
   {name: "Nguyen, Jane", review: "I had the crepe filled with chestnut butter and it was like tasting heaven.", img: rvImg1},
@@ -16,6 +19,17 @@ const testimonials = [
 ]
 
 const Home = () => {
+  const [openPopup, setOpenPopup] = useState(false);
+  const navigate = useNavigate();
+  const handleOrderClick = () => {
+    navigate('/order');
+    setOpenPopup(true);
+  };
+  const handleCloseModal = () => {
+    navigate('/');
+    setOpenPopup(false);
+  }
+  
   return (
     <div className=''>
       <section className="hero wide">
@@ -71,10 +85,20 @@ const Home = () => {
             Lorem ipsum dolor sit amet, consecte tur adipis cing elit, sed do eiusmod tempor incididu nt  Lorem ipsum dolor sit amet, consecte tur adipiscing elit, sed do eiusm od.
             </p>
             <div className="row">
-              <button className='btn1 col l-6'>Order Now</button>
+              <button className='btn1 col l-6' onClick={handleOrderClick}>Order Now</button>
             </div>
           </div>
         </div>
+        {openPopup ? (
+          <div className="modal-container">
+            <div className="order-layout">
+              <div className="close-icon row">
+                <CgClose  onClick={handleCloseModal} style={{cursor: "pointer"}}/>
+              </div>
+              <Outlet/>
+            </div>
+          </div>
+        ) : ("")}
         <div className="row">
           <h3 className='col l-12 order-testi'>DINERS SAY ABOUT US</h3>
           <div className='testi-layout row'>

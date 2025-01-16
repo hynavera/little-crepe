@@ -1,6 +1,5 @@
 import React, {useState, useEffect} from 'react'
 import "./OrderLayout.css"
-import { CgClose } from "react-icons/cg";
 import { Outlet, useLocation, useNavigate } from 'react-router-dom';
 import { FaAngleRight } from "react-icons/fa6";
 import { useSelector, useDispatch } from "react-redux";
@@ -10,6 +9,7 @@ import Cart from './Cart/Cart';
 const OrderLayout = () => {
   const [showPay, setShowPay] = useState(false);
   const [NavCart, setNavCart] = useState(1);
+
   const location = useLocation();
   // console.log(location);
   useEffect(() => {
@@ -24,19 +24,26 @@ const OrderLayout = () => {
       setNavCart(1);
     }
   })
+
+  const [currentStep, setCurrentStep] = useState(1);
+
   const navigate = useNavigate();
   const handleNext = () => {
     navigate('/order/customize');
+    setCurrentStep(1);
   }
   const handleNextPay = () => {
     navigate('/order/payinfo');
+    setCurrentStep(2);
   }
   const handlePayment = () => {
     navigate('/order/confirm');
+    setCurrentStep(3);
   }
   const handleConfirm = () => {
     navigate('/order/status');
   }
+
 
   const NavPayDisplay = () => {
     if (location.pathname === '/order/new-order' || location.pathname === '/order/customize') {
@@ -106,10 +113,7 @@ const OrderLayout = () => {
   }, [cartCost]);
 
   return (
-    <div className='order-layout'>
-      <div className="close-icon row">
-        <CgClose/>
-      </div>
+    <div>
       {showPay && (
         <div className='order-title'>
         <div className="order-wide">
@@ -117,11 +121,11 @@ const OrderLayout = () => {
             <div className="col l-12 new-title">
               <h4>ORDER ONLINE</h4>
               <div className="row">
-                <div className="sta1">Customize Menu</div>
+                <div className={`flow step${currentStep}`}>Customize Menu</div>
                 <FaAngleRight/>
-                <div className="sta2">Order Information & Payment</div>
+                <div className={`flow ${currentStep === 2 || currentStep === 3 ? 'step2' : ''}`}>Order Information & Payment</div>
                 <FaAngleRight/>
-                <div className="sta3">Delivery Confirmation</div>
+                <div className={`flow ${currentStep === 3 ? 'step3' : ''}`}>Delivery Confirmation</div>
               </div>
             </div> 
           </div>

@@ -110,7 +110,7 @@ const Customize = () => {
                     <button className="btn2">
                       x {item.quantity}
                     </button>
-                }
+                } modal
                 >
                   <div className="popup-container">
                     <DishItem {...item} key={item.name}/>

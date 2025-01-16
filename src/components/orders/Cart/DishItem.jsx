@@ -28,6 +28,9 @@ const DishItem = ({name, image, about, price, quantity}) => {
             <div className="pimage">
               <img src={image} alt="" />
             </div>
+            <div className='premove'>
+              <button className="btn1" onClick={() => handleRemove(name)}>Remove</button>
+            </div>
           </div>
           <div className="col l-5 pinfo">
             <div>
@@ -56,9 +59,6 @@ const DishItem = ({name, image, about, price, quantity}) => {
                 <input type="checkbox" name="cream" id="" />
                 <span htmlFor="">Mix cheese/whipped cream</span>
               </label>
-            </div>
-            <div className='premove'>
-              <button className="btn2" onClick={() => handleRemove(name)}>Remove</button>
             </div>
           </div>
           <div className="col l-2">

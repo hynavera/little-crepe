@@ -69,14 +69,14 @@ const Home = () => {
         </div>
         <br />
         <div className="about-img">
-          <img src="https://cdn.pixabay.com/photo/2025/01/10/08/05/08-05-31-202_960_720.jpg" alt="" />
+          <img src="https://cdn.pixabay.com/photo/2025/01/10/08/05/restaurant-9323426_960_720.jpg" alt="" />
         </div>
       </section>
       <section className="order">
         <div className="wide">
         <div className="row order-row">
           <div className="order-img">
-            <img src="https://cdn.pixabay.com/photo/2025/01/10/09/07/09-07-08-569_960_720.png" alt="" />
+            <img src="https://cdn.pixabay.com/photo/2025/01/10/09/07/crepes-9323494_1280.png" alt="" />
           </div>
           <div className="col l-0-7 l-4 hero-menu">
             <h4>ORDER ONLINE</h4>
@@ -137,7 +137,7 @@ const Home = () => {
             </div>
             <div className="order-img">
               <img src="https://cdn.pixabay.com/photo/2016/11/23/13/45/celebration-1852926_960_720.jpg" alt="" id='ev-im1' />
-              <img src="https://cdn.pixabay.com/photo/2025/01/10/10/51/10-51-19-802_960_720.png" alt="" id='ev-im2'/>
+              <img src="https://cdn.pixabay.com/photo/2025/01/10/10/51/crepe-9323695_1280.png" alt="" id='ev-im2'/>
             </div>
 
           </div>

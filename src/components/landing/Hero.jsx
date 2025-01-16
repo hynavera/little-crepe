@@ -48,7 +48,8 @@ const Hero = () => {
   }, [currentMenu]);
 
   return (
-    <section className="hero wide">
+    <div className="hero">
+    <section className="wide">
       <div className="row">
         <div className="col l-6 hero-img">
           <img 
@@ -109,6 +110,7 @@ const Hero = () => {
         </div>
       </div>
     </section>
+    </div>
   )
 }
 

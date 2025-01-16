@@ -141,10 +141,11 @@
   left: 0;
   bottom: 0;
 }
-.faq-row {
-  justify-content: space-around;
-  align-items: flex-start;
-  padding: 4rem 0 8rem;
+.faq-wide  {
+  padding: 4rem 0;
+}
+.faq-wide > .row {
+  padding-bottom: 4rem;
 }
 .faq-layout {
   display: flex;
@@ -156,9 +157,6 @@
     padding: 20px;
     background-color: var(--c1);
     border-radius: 8px;
-    p {
-      line-height: normal;
-    }
   }
 }
 .map-container {

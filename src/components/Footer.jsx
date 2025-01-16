@@ -41,7 +41,7 @@ const Footer = () => {
       </div>
       </div>
       <div className="copyright" style={{padding: "10px 10px", background: "var(--ac1)"}}>
-        <p className='p0 wide' style={{textAlign: "right", color: "#fff"}}>Designed & Developed by Hynavera.</p>
+        <p className='p0 wide' style={{textAlign: "center", color: "#fff"}}>Designed & Developed by Hynavera.</p>
       </div>
     </div>
   )

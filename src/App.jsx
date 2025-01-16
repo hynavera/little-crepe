@@ -1,5 +1,5 @@
 import './App.css';
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Home from './components/Home';
@@ -13,7 +13,7 @@ import Status from './components/orders/Info/Status';
 
 function App() {
   return (
-    <Router>
+    <BrowserRouter basename={"/quatre-crepes"}>
       <Navbar/>
       <Routes>
         <Route path='/' element={<Home/>}>
@@ -41,7 +41,7 @@ function App() {
         </div>
       </div>
       <Footer/>
-    </Router>
+    </BrowserRouter>
   )
 }
 

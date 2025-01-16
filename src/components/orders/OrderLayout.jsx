@@ -115,7 +115,7 @@ const OrderLayout = () => {
   }, [cartCost]);
 
   return (
-    <div>
+    <>
       {showPay && (
         <div className='order-title'>
         <div className="order-wide">
@@ -137,7 +137,7 @@ const OrderLayout = () => {
       <Outlet/>
       <NavPayDisplay/>
 
-    </div>
+    </>
   )
 }
 

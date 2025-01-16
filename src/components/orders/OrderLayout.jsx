@@ -110,6 +110,8 @@ const OrderLayout = () => {
       totalCost += item.price * item.quantity;
     });
     setTotalAmount(totalCost);
+    const totalAmountData = {totalCost}
+    sessionStorage.setItem("totalAmount", JSON.stringify(totalAmountData))
   }, [cartCost]);
 
   return (

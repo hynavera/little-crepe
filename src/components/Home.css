@@ -67,7 +67,7 @@
 }
 .order-row {
   align-items: center;
-  padding: 3rem 0 1rem;
+  padding: 3rem 0;
   min-height: 90vh;
 }
 .order-img {
@@ -87,11 +87,11 @@
 .testi-layout {
   justify-content: center;
   gap: 3rem;
-  padding-bottom: 8rem;
 }
 .order-testi {
   text-align: center;
-  margin-bottom: 2rem;
+    margin-top: 8rem;
+margin-bottom: 2rem;
 }
 .testi-card {
   display: flex;

@@ -16,7 +16,7 @@ const Review = () => {
   return (
     <div className='testi-layout row'>
     {testimonials.map(review => (
-    <div className="testi-card col l-4" key={review.name}>
+    <div className="testi-card col l-4 p-2" key={review.name}>
         <img src={review.img} className='testi-img'/>
         <div>
           <div className="testi-star">

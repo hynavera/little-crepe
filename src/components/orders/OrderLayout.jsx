@@ -51,16 +51,16 @@ const OrderLayout = () => {
       <div className="pay-order">
         <div className="order-wide">
           <div className="row">
-            <div className="col l-2">
+            <div className="col l-2 p-1">
               <Cart/>
             </div>
-            <div className="col l-0-3 l-4">
+            <div className="col l-0-3 l-4 p-3">
               <div className="row p-amount">
                 <h4>Total Amount (USD)</h4>
                 <h4>{totalAmount}</h4>
               </div>
             </div>
-            <div className="col l-3">
+            <div className="col l-3 p-0-2 p-2">
               {NavCart === 1 && <button className="btn2" onClick={handleNext}>Go to Cart</button>}
               {NavCart === 2 && <button className="btn2" onClick={handleNextPay}>Go to Checkout</button>}
             </div>
@@ -72,10 +72,10 @@ const OrderLayout = () => {
       <div className="pay-order">
         <div className="order-wide">
           <div className="row" style={{justifyContent: "space-between"}}>
-            <div className="col l-3">
+            <div className="col l-3 p-2">
               <button className="btn2" onClick={handleNext}>Back to Cart</button>
             </div>
-            <div className="col l-3">
+            <div className="col l-3 p-2">
               <button className="btn2" onClick={handlePayment}>Go to Payment</button>
             </div>
           </div>
@@ -86,13 +86,13 @@ const OrderLayout = () => {
       <div className="pay-order">
         <div className="order-wide">
           <div className="row">
-            <div className="col l-3">
+            <div className="col l-3 p-2">
               <button className="btn2" onClick={handleNextPay}>Back to Payment</button>
             </div>
-            <div className="col l-0-2 l-4">
+            <div className="col l-0-2 l-4 p-2">
               <p className='p1' style={{color: "var(--n0)"}}>By clicking ‘Confirm’, you agree to the restaurant's payment regulations.</p>
             </div>
-            <div className="col l-3">
+            <div className="col l-3 p-2">
               <button className="btn2" onClick={handleConfirm}>Confirm Order</button>
             </div>
           </div>
@@ -120,7 +120,7 @@ const OrderLayout = () => {
         <div className='order-title'>
         <div className="order-wide">
           <div className="row">
-            <div className="col l-12 new-title">
+            <div className="col l-12 p-4 new-title">
               <h4>ORDER ONLINE</h4>
               <div className="row">
                 <div className={`flow step${currentStep}`}>Customize Menu</div>

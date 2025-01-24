@@ -55,7 +55,7 @@
   }
 }
 .order-wide {
-  padding: 0 3em 1em;
+  padding: 0 3em;
   min-height: 90%;
 }
 .cart {
@@ -199,4 +199,21 @@
 .flow.step3 {
   color: var(--m2);
   font-weight: 500;
+}
+
+
+@media screen and (max-width: 768px) {
+  .order-layout {
+    width: 100vw;
+    bottom: 1rem;
+    position: absolute;
+  }
+  .order-wide {
+    padding: 0 1em 1em;
+  }
+  .pay-order {
+    .order-wide {
+      padding: 0.5rem;
+    }
+  }
 }

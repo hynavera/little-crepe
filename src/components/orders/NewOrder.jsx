@@ -27,7 +27,7 @@ const NewOrder = () => {
     <div className='order-wide'>
       <div className="new-order">
         <div className="row">
-          <div className="col l-9">
+          <div className="col l-9 p-4">
             <h4>We serve a fresh, handcrafted and heartfelt experience 
             on every plate.</h4>
           </div>
@@ -37,13 +37,13 @@ const NewOrder = () => {
         {dishes.map((category, index) => (
         <div className="crepe-type" key={index}>
         <div className="row">
-          <div className="col l-12">
+          <div className="col l-12 p-4">
             <h3>{category.category}</h3>
           </div>
         </div>
         <div className="row dish-row">
         {category.crepes.map((dish) => (
-        <div key={dish.name} className="col l-3 dish-card-lt">
+        <div key={dish.name} className="col l-3 p-2 dish-card-lt">
           <div className="dish-card">
             <div className="card-linear"></div>
             <div className="dimage">

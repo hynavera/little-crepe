@@ -27,7 +27,7 @@ const Home = () => {
       <section className="about">
         <div className="wide">
           <div className="row">
-            <div className="col l-0-1 l-7">
+            <div className="col l-0-1 l-7 p-4">
               <h1>FRENCHIEE-NOUS</h1>
               <p>
               Lorem ipsum dolor sit amet, consecte tur adipis cing elit, sed do eiusmod tempor incididu nt  Lorem ipsum dolor sit amet, consecte tur adipiscing elit, sed do eiusm od. Lorem ipsum dolor sit amet, consecte tur adipiscing elit.
@@ -45,14 +45,14 @@ const Home = () => {
       <section className="order">
         <div className="wide">
         <div className="row">
-          <h3 className='col l-12 order-testi'>DINERS SAY ABOUT US</h3>
+          <h3 className='col l-12 p-4 order-testi'>DINERS SAY ABOUT US</h3>
           <Review/>
           </div>
         <div className="row order-row">
-          <div className="order-img">
+          <div className="order-img p-0">
             <img src="https://cdn.pixabay.com/photo/2025/01/10/09/07/crepes-9323494_1280.png" alt="" />
           </div>
-          <div className="col l-0-7 l-4 hero-menu">
+          <div className="col l-0-7 l-4 p-4 hero-menu">
             <h4>ORDER ONLINE</h4>
             <h1>“Paris-outdoors to your home”</h1>
             <p>
@@ -78,7 +78,7 @@ const Home = () => {
       <section className="events">
         <div className="wide">
           <div className="row order-row">
-            <div className="col l-0-1 l-4 hero-menu">
+            <div className="col l-0-1 l-4 p-4 hero-menu">
               <h4>EVENTS</h4>
               <h1>“Dinning through the night!”</h1>
               <p>
@@ -88,7 +88,7 @@ const Home = () => {
                  <button className='btn2 col l-6'>Book a Table</button>
               </div>
             </div>
-            <div className="order-img">
+            <div className="order-img p-0">
               <img src="https://cdn.pixabay.com/photo/2016/11/23/13/45/celebration-1852926_960_720.jpg" alt="" id='ev-im1' />
               <img src="https://cdn.pixabay.com/photo/2025/01/10/10/51/crepe-9323695_1280.png" alt="" id='ev-im2'/>
             </div>
@@ -98,7 +98,7 @@ const Home = () => {
       </section>
       <section className="faq wide faq-wide">
         <div className="row">
-          <div className="col  l-0-2 l-8">
+          <div className="col  l-0-2 l-8 p-4">
             <h3>FAQ</h3>
             <p className='p0'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
             </p>
@@ -106,7 +106,7 @@ const Home = () => {
           </div>
         </div>    
         <div className="row">
-          <div className="col l-0-2 l-8">
+          <div className="col l-0-2 l-8 p-4">
             <h3>VISIT US</h3>
             <p className='p0'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
             </p>

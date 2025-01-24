@@ -36,8 +36,8 @@ const Footer = () => {
         </div>
       </div>
       <div className="row copy">
-        <div className="foot-line"></div>
-        <p>(C) Copyright 2024, Quatre-Crepes Hanoi.</p>
+        <div className="foot-line col l-12 p-4"></div>
+        <p className='col l-12 p-4'>(C) Copyright 2024, Quatre-Crepes Hanoi.</p>
       </div>
       </div>
       <div className="copyright" style={{padding: "10px 10px", background: "var(--ac1)"}}>

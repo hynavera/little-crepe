@@ -6,11 +6,11 @@ const Status = () => {
   return (
     <div className='order-wide'>
       <div className="row">
-        <div className="col l-12 sta-head">
+        <div className="col l-12 p-4 sta-head">
           <h1>Felicitations!</h1>
           <h4>Order no. #Q00016</h4>
         </div>
-        <div className="col l-0-1 l-10 sta-mid">
+        <div className="col l-0-1 l-10 p-4 sta-mid">
           <p className="p1">(Get ready to packing!)</p>
           <div className="sta-stamap">
             <div className='sta-map'>

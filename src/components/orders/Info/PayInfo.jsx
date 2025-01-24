@@ -35,34 +35,34 @@ const PayInfo = () => {
       <section className="crepe-layout">
         <div className="crepe-type">
           <div className="row">
-            <div className="col l-12">
+            <div className="col l-12 p-4">
               <h3>Contact Info</h3>
             </div>
           </div>
         <div className="info-layout">
           <div className="row info-input">
-            <div className="col l-2">
+            <div className="col l-2 p-4">
               <label htmlFor="name">Name</label>
             </div>
-            <div className="col l-6">
+            <div className="col l-6 p-4">
               <input type="text" name='name' placeholder='Full name' 
               value={contact.name} onChange={handleChange}/>
             </div>
           </div>
           <div className="row info-input">
-            <div className="col l-2">
+            <div className="col l-2 p-4">
               <label htmlFor="phone">Phone number</label>
             </div>
-            <div className="col l-6">
+            <div className="col l-6 p-4">
               <input type="phone" name='phone' placeholder='Mobile number' 
               value={contact.phone} onChange={handleChange}/>
             </div>
           </div>
           <div className="row info-input">
-            <div className="col l-2">
+            <div className="col l-2 p-4">
               <label htmlFor="address">Address</label>
             </div>
-            <div className="col l-6">
+            <div className="col l-6 p-4">
               <textarea type="text" name='address' placeholder='Please specify your address' 
               value={contact.address} onChange={handleChange}/>
             </div>
@@ -74,32 +74,32 @@ const PayInfo = () => {
 
         <div className="crepe-type">
           <div className="row">
-            <div className="col l-12">
+            <div className="col l-12 p-4">
               <h3>Checkout</h3>
             </div>
           </div>
         <div className="info-layout">
           <div className="row info-input">
-            <div className="col l-2">
+            <div className="col l-2 p-4">
               <label >Total amount</label>
             </div>
-            <div className="col l-6">
+            <div className="col l-6 p-4">
               <div className="input inputset">{totalAmountData?.totalCost}</div>
             </div>
           </div>
           <div className="row info-input">
-            <div className="col l-2">
+            <div className="col l-2 p-4">
               <label >Shipping fee</label>
             </div>
-            <div className="col l-6">
+            <div className="col l-6 p-4">
               <div className="input">Calculating...</div>
             </div>
           </div>
           <div className="row info-input">
-            <div className="col l-2">
+            <div className="col l-2 p-4">
               <label >Tax</label>
             </div>
-            <div className="col l-6">
+            <div className="col l-6 p-4">
             <div className="input">Calculating...</div>
             </div>
           </div>
@@ -110,40 +110,40 @@ const PayInfo = () => {
 
         <div className="crepe-type">
           <div className="row">
-            <div className="col l-12">
+            <div className="col l-12 p-4">
               <h3>Your Payment</h3>
             </div>
           </div>
         <div className="info-layout">
           <div className="row info-input">
-            <div className="col l-2">
+            <div className="col l-2 p-4">
               <label >Card name</label>
             </div>
-            <div className="col l-6">
+            <div className="col l-6 p-4">
               <input placeholder='We accept VISA, MasterCard, NAPAS' />
             </div>
           </div>
           <div className="row info-input">
-            <div className="col l-2">
+            <div className="col l-2 p-4">
               <label >Card number</label>
             </div>
-            <div className="col l-6">
+            <div className="col l-6 p-4">
               <input placeholder='XXXX XXXX XXXX XXXX'/>
             </div>
           </div>
           <div className="row info-input">
-            <div className="col l-2">
+            <div className="col l-2 p-4">
               <label >Expiration</label>
             </div>
-            <div className="col l-6">
+            <div className="col l-6 p-4">
               <input placeholder='MM / YY'/>
             </div>
           </div>
           <div className="row info-input">
-            <div className="col l-2">
+            <div className="col l-2 p-4">
               <label >CVV</label>
             </div>
-            <div className="col l-6">
+            <div className="col l-6 p-4">
               <input placeholder='XXX'/>
             </div>
           </div>

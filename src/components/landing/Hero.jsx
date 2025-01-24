@@ -51,7 +51,7 @@ const Hero = () => {
     <div className="hero">
     <section className="wide">
       <div className="row">
-        <div className="col l-6 hero-img">
+        <div className="col l-6 p-0 hero-img">
           <img 
             src={menu === 1 
               ? "https://firebasestorage.googleapis.com/v0/b/huyennguyen-dev.appspot.com/o/Coding%2FQuatre-Crepes%2FProperty%201%3Dh1.png?alt=media&token=a117758e-b056-444b-b09a-c2746ca7ea84" 
@@ -71,7 +71,7 @@ const Hero = () => {
             <img src="https://firebasestorage.googleapis.com/v0/b/huyennguyen-dev.appspot.com/o/Coding%2FQuatre-Crepes%2FProperty%201%3Dh3.png?alt=media&token=0194ba1b-8e24-4035-8870-111234834154" alt="" />
           } */}
         </div>
-        <div className="col l-0-1 l-4 hero-menu">
+        <div className="col l-0-1 l-4 p-3 hero-menu">
           {menu === 1 && <>
             <h4>CREPES DAY</h4>
             <h1>Savory galettes <br />& sweets</h1>

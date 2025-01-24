@@ -88,7 +88,7 @@ const Customize = () => {
           </div>
         <div className="row dish-row">
           {cartItems.map((item) => (
-          <div key={item.name} className="col l-3 dish-card-lt">
+          <div key={item.name} className="col l-3 p-2 dish-card-lt">
           <div className="dish-card">
             <div className="card-linear"></div>
             <div className="dimage">
@@ -129,7 +129,7 @@ const Customize = () => {
       <section className="crepe-layout">
         <div className="crepe-type">
           <div className="row">
-            <div className="col l-12">
+            <div className="col l-12 p-4">
               <h3>Other Suggestion</h3>
             </div>
           </div>
@@ -139,7 +139,7 @@ const Customize = () => {
                 <p className="p0 dabout">{randomDish.aboutRd}</p>
               </div> */}
         {randomDishes.map((dish, index) => (
-        <div key={index} className="col l-3 dish-card-lt">
+        <div key={index} className="col l-3 p-2 dish-card-lt">
           <div className="dish-card">
             <div className="card-linear"></div>
             <div className="dimage">
@@ -170,7 +170,7 @@ const Customize = () => {
         </div>
         <br />
         <div className="row">
-          <div className="col l-3">
+          <div className="col l-3 p-4">
             <button className="btn1">View All Menu</button>
           </div>
         </div>

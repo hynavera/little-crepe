@@ -24,7 +24,7 @@ const DishItem = ({name, image, about, price, quantity}) => {
           <Cart/>
         </div>
         <div className="row pdish">
-          <div className="col l-5">
+          <div className="col l-5 p-4">
             <div className="pimage">
               <img src={image} alt="" />
             </div>
@@ -32,7 +32,7 @@ const DishItem = ({name, image, about, price, quantity}) => {
               <button className="btn1" onClick={() => handleRemove(name)}>Remove</button>
             </div>
           </div>
-          <div className="col l-5 pinfo">
+          <div className="col l-5 p-4 pinfo">
             <div>
               <h2>{name}</h2>
               <p>{about}</p>
@@ -61,7 +61,7 @@ const DishItem = ({name, image, about, price, quantity}) => {
               </label>
             </div>
           </div>
-          <div className="col l-2">
+          <div className="col l-2 p-0-2 p-2">
             <div className="row pprice">
               <p className="p1">USD</p>
               <h4>{price}</h4>

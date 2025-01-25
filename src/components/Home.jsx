@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import "./Home.css";
+import "../components/landing/Landing.css"
 import Hero from './landing/Hero';
 import Review from './landing/Review';
 import Faq from './landing/Faq';
@@ -49,7 +50,7 @@ const Home = () => {
           <Review/>
           </div>
         <div className="row order-row">
-          <div className="order-img p-0">
+          <div className="order-img p-4">
             <img src="https://cdn.pixabay.com/photo/2025/01/10/09/07/crepes-9323494_1280.png" alt="" />
           </div>
           <div className="col l-0-7 l-4 p-4 hero-menu">
@@ -59,7 +60,7 @@ const Home = () => {
             Lorem ipsum dolor sit amet, consecte tur adipis cing elit, sed do eiusmod tempor incididu nt  Lorem ipsum dolor sit amet, consecte tur adipiscing elit, sed do eiusm od.
             </p>
             <div className="row">
-              <button className='btn1 col l-6' onClick={handleOrderClick}>Order Now</button>
+              <button className='btn1 col l-6 p-4' onClick={handleOrderClick}>Order Now</button>
             </div>
           </div>
         </div>
@@ -85,10 +86,10 @@ const Home = () => {
               Lorem ipsum dolor sit amet, consecte tur adipis cing elit, sed do eiusmod tempor incididu nt  Lorem ipsum dolor sit amet, consecte tur adipiscing elit, sed do eiusm od.
               </p>
               <div className="row">
-                 <button className='btn2 col l-6'>Book a Table</button>
+                 <button className='btn2 col l-6 p-4'>Book a Table</button>
               </div>
             </div>
-            <div className="order-img p-0">
+            <div className="order-img">
               <img src="https://cdn.pixabay.com/photo/2016/11/23/13/45/celebration-1852926_960_720.jpg" alt="" id='ev-im1' />
               <img src="https://cdn.pixabay.com/photo/2025/01/10/10/51/crepe-9323695_1280.png" alt="" id='ev-im2'/>
             </div>

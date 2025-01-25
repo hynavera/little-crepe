@@ -1,5 +1,5 @@
 import React, {useEffect, useState, useRef} from 'react'
-
+import "./Landing.css"
 const Hero = () => {
   const [menu, setMenu] = useState(1);
   const handleSetMenu1 = () => {
@@ -51,7 +51,7 @@ const Hero = () => {
     <div className="hero">
     <section className="wide">
       <div className="row">
-        <div className="col l-6 p-0 hero-img">
+        <div className="col l-6 p-4 hero-img">
           <img 
             src={menu === 1 
               ? "https://firebasestorage.googleapis.com/v0/b/huyennguyen-dev.appspot.com/o/Coding%2FQuatre-Crepes%2FProperty%201%3Dh1.png?alt=media&token=a117758e-b056-444b-b09a-c2746ca7ea84" 

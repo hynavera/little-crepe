@@ -27,13 +27,13 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 1%;
+  gap: 6px;
   button {
     margin-top: 10px;
   }
 }
 .hero-circle-row {
-  padding-top: 1em;
+  padding-top: 0.5em;
   gap: 1em;
 }
 .hero-circle {
@@ -85,9 +85,13 @@
   position: relative;
 }
 .order-row {
-  align-items: center;
+  align-items: flex-end;
   padding: 3rem 0;
   min-height: 90vh;
+  margin-bottom: 6rem;
+  .hero-menu {
+    height: auto;
+  }
 }
 .order-img {
   border-radius: 48px;
@@ -96,6 +100,7 @@
   width: 60vw;
   position: absolute;
   right: 50%;
+  z-index: 1;
   img {
     object-fit: cover;
     /* object-position: left bottom; */
@@ -103,14 +108,27 @@
     width: 100%;
   }
 }
+.order-speed {
+  /* height: 50px; */
+  background-color: var(--m1);
+  border-radius: 24px;
+  z-index: 2;
+  display: flex;
+  justify-content: space-evenly;
+  .speed {
+    font-size: 2.4em;
+    stroke-width: 1px;
+  }
+}
+
 .testi-layout {
   justify-content: center;
   gap: 3rem;
 }
 .order-testi {
   text-align: center;
-    margin-top: 8rem;
-margin-bottom: 2rem;
+    margin-top: 6rem;
+  margin-bottom: 2rem;
 }
 .testi-card {
   display: flex;
@@ -136,8 +154,9 @@ margin-bottom: 2rem;
   h4, p {
     color: var(--c2);
   }
-  .order-row {
+  .event-row {
     padding: 1rem 0;
+    align-items: center;
   }
   .order-img {
     left: 50%;

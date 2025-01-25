@@ -8,7 +8,7 @@ import CustomMap from './landing/CustomMap';
 import { APIProvider } from "@vis.gl/react-google-maps";
 import { useNavigate, Outlet } from 'react-router-dom'; 
 import { CgClose } from "react-icons/cg";
-
+import { FiChevronsRight } from "react-icons/fi";
 
 const Home = () => {
   const [openPopup, setOpenPopup] = useState(false);
@@ -53,14 +53,24 @@ const Home = () => {
           <div className="order-img p-4">
             <img src="https://cdn.pixabay.com/photo/2025/01/10/09/07/crepes-9323494_1280.png" alt="" />
           </div>
-          <div className="col l-0-7 l-4 p-4 hero-menu">
+          <div className="col l-7 p-4 order-speed">
+            <FiChevronsRight className='speed'/>
+            <FiChevronsRight className='speed'/>
+            <FiChevronsRight className='speed'/>
+            <FiChevronsRight className='speed'/>
+            <FiChevronsRight className='speed'/>
+            <FiChevronsRight className='speed'/>
+            <FiChevronsRight className='speed'/>
+            <FiChevronsRight className='speed'/>
+          </div>
+          <div className="col l-4 p-4 hero-menu">
             <h4>ORDER ONLINE</h4>
             <h1>“Paris-outdoors to your home”</h1>
             <p>
             Lorem ipsum dolor sit amet, consecte tur adipis cing elit, sed do eiusmod tempor incididu nt  Lorem ipsum dolor sit amet, consecte tur adipiscing elit, sed do eiusm od.
             </p>
             <div className="row">
-              <button className='btn1 col l-6 p-4' onClick={handleOrderClick}>Order Now</button>
+              <button className='btn1 col l-6 p-2' onClick={handleOrderClick}>Order Now</button>
             </div>
           </div>
         </div>
@@ -78,7 +88,7 @@ const Home = () => {
       </section>
       <section className="events">
         <div className="wide">
-          <div className="row order-row">
+          <div className="row event-row">
             <div className="col l-0-1 l-4 p-4 hero-menu">
               <h4>EVENTS</h4>
               <h1>“Dinning through the night!”</h1>
@@ -86,7 +96,7 @@ const Home = () => {
               Lorem ipsum dolor sit amet, consecte tur adipis cing elit, sed do eiusmod tempor incididu nt  Lorem ipsum dolor sit amet, consecte tur adipiscing elit, sed do eiusm od.
               </p>
               <div className="row">
-                 <button className='btn2 col l-6 p-4'>Book a Table</button>
+                 <button className='btn2 col l-6 p-2'>Book a Table</button>
               </div>
             </div>
             <div className="order-img">

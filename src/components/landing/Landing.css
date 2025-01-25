@@ -41,16 +41,22 @@
 
   .order-row {
     min-height: auto;
-    gap: 50px;
+    .hero-menu {
+      margin-top: 50px;
+    }
   }
   .order-img {
     position: static;
     border-radius: 0;
     height: 25vh;
   }
+  .order-speed {
+    margin-top: -5%;
+    border-radius: 0;
+  }
 
   .events {
-    .order-row {
+    .event-row {
       padding: 3rem 0;
       gap: 50px;
     }

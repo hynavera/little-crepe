@@ -1,5 +1,4 @@
 import React, {useState, useEffect} from 'react'
-import cartImg from '../../../assets/cart.svg'
 import { useSelector, useDispatch } from "react-redux";
 
 const Cart = () => {

@@ -19,8 +19,10 @@
   top: 0;
   justify-content: flex-end;
   padding: 10px;
+  z-index: 99;
   svg {
     font-size: 30px;
+    background-color: var(--c2);
     path {fill: var(--ac1);}
   }
 }
@@ -204,9 +206,12 @@
 
 @media screen and (max-width: 768px) {
   .order-layout {
-    width: 100vw;
-    bottom: 1rem;
+    width: 90vw;
+    bottom: 2rem;
     position: absolute;
+  }
+  .flow {
+    font-size: 14px;
   }
   .order-wide {
     padding: 0 1em 1em;
@@ -215,5 +220,16 @@
     .order-wide {
       padding: 0.5rem;
     }
+  }
+  .odlt-input {
+    gap: 8px;
+  }
+  .dish-info {
+    .dish-name {
+      height: 100px !important;
+    }
+  }
+  .card-linear {
+    height: 250px;
   }
 }

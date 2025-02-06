@@ -86,7 +86,7 @@ const OrderLayout = () => {
       <div className="pay-order">
         <div className="order-wide">
           <div className="row">
-            <div className="col l-3 p-2">
+            <div className="col l-3 p-0-2 p-2">
               <button className="btn2" onClick={handleNextPay}>Back to Payment</button>
             </div>
             <div className="col l-0-2 l-4 p-2">

@@ -82,7 +82,7 @@ const Customize = () => {
       <section className="crepe-layout">
         <div className="crepe-type">
           <div className="row">
-            <div className="col l-12">
+            <div className="col l-12 p-4">
               <h3>Your Order</h3>
             </div>
           </div>

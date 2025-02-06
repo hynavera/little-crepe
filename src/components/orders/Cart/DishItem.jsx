@@ -28,7 +28,7 @@ const DishItem = ({name, image, about, price, quantity}) => {
             <div className="pimage">
               <img src={image} alt="" />
             </div>
-            <div className='premove'>
+            <div className='premove p-0'>
               <button className="btn1" onClick={() => handleRemove(name)}>Remove</button>
             </div>
           </div>
@@ -61,14 +61,14 @@ const DishItem = ({name, image, about, price, quantity}) => {
               </label>
             </div>
           </div>
-          <div className="col l-2 p-0-2 p-2">
+          <div className="col l-2 p-0">
             <div className="row pprice">
               <p className="p1">USD</p>
               <h4>{price}</h4>
             </div>
           </div>
         </div>
-        <div className="row" style={{justifyContent: "flex-end"}}>
+        <div className="row pout" style={{justifyContent: "flex-end"}}>
           <p className='p0'>Click outside to continue</p>
         </div>
       </div>

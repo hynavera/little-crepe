@@ -212,19 +212,21 @@ h3 {
   font-weight: 600;
 }
 h4 {
-  font-size: 22px;
+  font-size: 24px;
   font-weight: 500;
   color: var(--m2);
   line-height: 160%;
 }
 p {
   line-height: 160%;
+  font-size: 22px;
+  font-weight: 320;
 }
 p.p0 {
-  font-size: 18px;
+  font-size: 19px;
 }
 p.p1 {
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 400;
 }
 

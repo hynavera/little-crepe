@@ -25,28 +25,29 @@ const Home = () => {
   return (
     <div className=''>
       <Hero/>
+
       <section className="about">
         <div className="wide">
           <div className="row">
-            <div className="col l-0-1 l-7 p-4">
-              <h1>FRENCHIEE-NOUS</h1>
-              <p>
-              Lorem ipsum dolor sit amet, consecte tur adipis cing elit, sed do eiusmod tempor incididu nt  Lorem ipsum dolor sit amet, consecte tur adipiscing elit, sed do eiusm od. Lorem ipsum dolor sit amet, consecte tur adipiscing elit.
-              <br />
-              Lorem ipsum dolor sit amet, consecte tur adipis cing elit, sed do eiusmod tempor incididu nt  Lorem ipsum dolor sit amet, consecte tur adipiscing elit, sed do eiusm od. Lorem ipsum dolor sit amet, consecte tur adipiscing elit.
+            <div className="col l-0-1 l-8 p-4">
+              <h2>FRENCHIEE-NOUS! </h2>
+              <h3>We bring you best French crepe! </h3>
+              <p> <br />
+              We are a family owned French restaurant, focused on traditional recipes served with a modern twist. We focus on fresh produce and big flavours, offering bespoke crepes and the best drinks selection.
               </p>
+              <br />
             </div>
           </div>
         </div>
         <br />
         <div className="about-img">
-          <img src="https://cdn.pixabay.com/photo/2025/01/10/08/05/restaurant-9323426_960_720.jpg" alt="" />
+          <img src="https://cdn.pixabay.com/photo/2014/09/17/20/26/restaurant-449952_1280.jpg" alt="" />
         </div>
       </section>
       <section className="order">
         <div className="wide">
         <div className="row">
-          <h3 className='col l-12 p-4 order-testi'>DINERS SAY ABOUT US</h3>
+          <h2 className='col l-12 p-4 order-testi'>Testimonials - Diners say about us</h2>
           <Review/>
           </div>
         <div className="row order-row">
@@ -100,8 +101,8 @@ const Home = () => {
               </div>
             </div>
             <div className="order-img">
-              <img src="https://cdn.pixabay.com/photo/2016/11/23/13/45/celebration-1852926_960_720.jpg" alt="" id='ev-im1' />
-              <img src="https://cdn.pixabay.com/photo/2025/01/10/10/51/crepe-9323695_1280.png" alt="" id='ev-im2'/>
+              <img src="https://cdn.pixabay.com/photo/2025/01/10/10/51/crepe-9323695_1280.png" alt="" id='ev-im1' />
+              <img src="https://cdn.pixabay.com/photo/2016/11/23/13/45/celebration-1852926_960_720.jpg" alt="" id='ev-im2'/>
             </div>
 
           </div>

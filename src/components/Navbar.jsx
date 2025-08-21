@@ -17,15 +17,6 @@ const Navbar = () => {
     <div className='header'>
       <nav className="navbar">
         <ul>
-          <li onClick={checkHandler}>
-            <Link to="/">OUR MENU</Link>
-          </li>
-          <li onClick={checkHandler}>
-            <Link to="/">OUR STORY</Link>
-          </li>
-          <li onClick={checkHandler}>
-            <Link to="/">EVENTS</Link>
-          </li>
           <li className='logo-header'>
             <Link to="/">
             <div>
@@ -34,13 +25,16 @@ const Navbar = () => {
             </Link>
           </li>
           <li onClick={checkHandler}>
-            <Link to="/order">ORDERS</Link>
-            </li>
-          <li onClick={checkHandler}>
-            <Link to="/">RESERVATIONS</Link>
+            <Link to="/our-menu">OUR MENU</Link>
           </li>
           <li onClick={checkHandler}>
-            <Link to="/">CONTACT</Link>
+            <Link to="/our-story">OUR STORY</Link>
+          </li>
+          <li onClick={checkHandler}>
+            <Link to="/events">EVENTS</Link>
+          </li>
+          <li onClick={checkHandler}>
+            <Link to="/contact-us">CONTACT</Link>
           </li>
         </ul>
       </nav>
@@ -70,12 +64,6 @@ const Navbar = () => {
             </li>
             <li onClick={checkHandler}>
               <Link to="/">EVENTS</Link>
-            </li>
-            <li onClick={checkHandler}>
-              <Link to="/order">ORDERS</Link>
-              </li>
-            <li onClick={checkHandler}>
-              <Link to="/">RESERVATIONS</Link>
             </li>
             <li onClick={checkHandler}>
               <Link to="/">CONTACT</Link>

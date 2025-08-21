@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from "../assets/logo.png";
+import logo from "../assets/logo-foot.png";
 import { FaFacebook, FaTelegram, FaFacebookMessenger } from "react-icons/fa";
 
 const Footer = () => {
@@ -12,11 +12,11 @@ const Footer = () => {
             <img src={logo} alt="" />
           </div>
           <div className="row">
-            <div className="col l-0-1 l-5">
+            <div className="col l-6">
               <ul>
-                <li><p>Address: 320 Lincoln Ave, Long Bien, Hanoi</p></li>
+                <li><p>Address: 320 Lincoln Ave, Dragonedge, VN</p></li>
                 <li><p>Phone: (01) 503-45-8377</p></li>
-                <li><p>Email: quatre-crepes@email.com</p></li>
+                <li><p>Email: restaurant@littlecrepe-vn.com</p></li>
               </ul>
             </div>
             <div className="col l-0-1 l-5">
@@ -37,7 +37,7 @@ const Footer = () => {
       </div>
       <div className="row copy">
         <div className="foot-line col l-12 p-4"></div>
-        <p className='col l-12 p-4'>(C) Copyright 2024, Quatre-Crepes Hanoi.</p>
+        <p className='col l-12 p-4'>(C) Copyright 2024, Litle Crepe VN.</p>
       </div>
       </div>
       <div className="copyright" style={{padding: "10px 10px", background: "var(--ac1)"}}>

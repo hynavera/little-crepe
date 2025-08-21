@@ -49,6 +49,8 @@ const Hero = () => {
 
   return (
     <div className="hero">
+          <div className="hero-background"></div>
+
     <section className="wide">
       <div className="row">
         <div className="col l-6 p-4 hero-img">
@@ -75,19 +77,19 @@ const Hero = () => {
           {menu === 1 && <>
             <h4>CREPES DAY</h4>
             <h1>Savory galettes <br />& sweets</h1>
-            <p>Enjoy unique crepes based on French recipes at a classic restaurant on the banks of the Red River, right in the heart of the capital Hanoi.
+            <p>Enjoy unique crepes based on French recipes at a classic restaurant on the banks of the Red River, right in the heart of the capital.
             </p>
           </>}
           {menu === 2 && <>
             <h4>SPECIALS-DAY</h4>
             <h1>Traditional <br />des bonnes crêpes</h1>
-            <p>Enjoy unique crepes based on French recipes at a classic restaurant on the banks of the Red River, right in the heart of the capital Hanoi.
+            <p>Enjoy unique crepes based on French recipes at a classic restaurant on the banks of the Red River, right in the heart of the capital.
             </p>
           </>}
           {menu === 3 && <>
             <h4>FULL-TOPPINGS</h4>
             <h1>Spices, mixes <br />& more dressings</h1>
-            <p>Enjoy unique crepes based on French recipes at a classic restaurant on the banks of the Red River, right in the heart of the capital Hanoi.
+            <p>Enjoy unique crepes based on French recipes at a classic restaurant on the banks of the Red River, right in the heart of the capital.
             </p>
           </>}
           <div className="row hero-circle-row">

@@ -25,14 +25,14 @@
 .hero-img-animation-1,
 .hero-img-animation-2,
 .hero-img-animation-3 {
-  transform: translate(-100%, 50%) rotate(-180deg);
-  transition: 0.5s ease-in-out; 
+  transform: translate(-500%, 200%) rotate(-180deg);
+  transition: 1s ease-in; 
 }
 .hero-img-animation-1.active,
 .hero-img-animation-2.active,
 .hero-img-animation-3.active {
   transform: translate(0, 0) ;
-  transition: 0.5s ease-in-out; 
+  transition: 2s ease-in; 
 }
 
 .hero-menu {

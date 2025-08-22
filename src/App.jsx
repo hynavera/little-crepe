@@ -22,18 +22,7 @@ function App() {
         <Route path='/' element={<Home/>}>
 
 
-          <Route path='/order' element={<OrderLayout/>}>
-            <Route index element={<Location/>}/>
-            <Route path='new-order' element={<NewOrder/>}/>
-            <Route path='customize' element={<Customize/>}/>
-            <Route path='payinfo' element={<PayInfo/>}/>
-            <Route path='confirm' element={<Confirm/>}/>
-            <Route path='status' element={<Status/>}/>
-          </Route>
-
-        </Route>
-
-        {/* <Route path='/order' element={<OrderLayout/>}>
+          {/* <Route path='/order' element={<OrderLayout/>}>
             <Route index element={<Location/>}/>
             <Route path='new-order' element={<NewOrder/>}/>
             <Route path='customize' element={<Customize/>}/>
@@ -41,6 +30,17 @@ function App() {
             <Route path='confirm' element={<Confirm/>}/>
             <Route path='status' element={<Status/>}/>
           </Route> */}
+
+        </Route>
+
+        <Route path='/order' element={<OrderLayout/>}>
+            <Route index element={<Location/>}/>
+            <Route path='new-order' element={<NewOrder/>}/>
+            <Route path='customize' element={<Customize/>}/>
+            <Route path='payinfo' element={<PayInfo/>}/>
+            <Route path='confirm' element={<Confirm/>}/>
+            <Route path='status' element={<Status/>}/>
+          </Route>
 
         <Route path='/our-menu' element={<Menu/>}/>
 

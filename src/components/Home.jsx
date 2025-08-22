@@ -2,8 +2,6 @@ import React, {useState} from 'react';
 import "./Home.css";
 import "../components/landing/Landing.css"
 import Hero from './landing/Hero';
-import Review from './landing/Review';
-import Faq from './landing/Faq';
 import CustomMap from './landing/CustomMap';
 import { APIProvider } from "@vis.gl/react-google-maps";
 import { useNavigate, Outlet } from 'react-router-dom'; 
@@ -30,10 +28,10 @@ const Home = () => {
         <div className="wide">
           <div className="row">
             <div className="col l-0-1 l-8 p-4">
-              <h2>FRENCHIEE-NOUS! </h2>
-              <h3>We bring you best French crepe! </h3>
+              <h2>F </h2>
+              <h3>We </h3>
               <p> <br />
-              We are a family owned French restaurant, focused on traditional recipes served with a modern twist. We focus on fresh produce and big flavours, offering bespoke crepes and the best drinks selection.
+              We ar
               </p>
               <br />
             </div>
@@ -46,27 +44,9 @@ const Home = () => {
       </section>
       <section className="order">
         <div className="wide">
-        <div className="row">
-          <h2 className='col l-12 p-4 order-testi'>Testimonials - Diners say about us</h2>
-          <Review/>
-          </div>
         <div className="row order-row">
-          <div className="order-img p-4">
-            <img src="https://cdn.pixabay.com/photo/2025/01/10/09/07/crepes-9323494_1280.png" alt="" />
-          </div>
-          <div className="col l-7 p-4 order-speed">
-            <FiChevronsRight className='speed'/>
-            <FiChevronsRight className='speed'/>
-            <FiChevronsRight className='speed'/>
-            <FiChevronsRight className='speed'/>
-            <FiChevronsRight className='speed'/>
-            <FiChevronsRight className='speed'/>
-            <FiChevronsRight className='speed'/>
-            <FiChevronsRight className='speed'/>
-          </div>
           <div className="col l-4 p-4 hero-menu">
             <h4>ORDER ONLINE</h4>
-            <h1>“Paris-outdoors to your home”</h1>
             <p>
             Lorem ipsum dolor sit amet, consecte tur adipis cing elit, sed do eiusmod tempor incididu nt  Lorem ipsum dolor sit amet, consecte tur adipiscing elit, sed do eiusm od.
             </p>
@@ -87,36 +67,7 @@ const Home = () => {
         ) : ("")}
         </div>
       </section>
-      <section className="events">
-        <div className="wide">
-          <div className="row event-row">
-            <div className="col l-0-1 l-4 p-4 hero-menu">
-              <h4>EVENTS</h4>
-              <h1>“Dinning through the night!”</h1>
-              <p>
-              Lorem ipsum dolor sit amet, consecte tur adipis cing elit, sed do eiusmod tempor incididu nt  Lorem ipsum dolor sit amet, consecte tur adipiscing elit, sed do eiusm od.
-              </p>
-              <div className="row">
-                 <button className='btn2 col l-6 p-2'>Book a Table</button>
-              </div>
-            </div>
-            <div className="order-img">
-              <img src="https://cdn.pixabay.com/photo/2025/01/10/10/51/crepe-9323695_1280.png" alt="" id='ev-im1' />
-              <img src="https://cdn.pixabay.com/photo/2016/11/23/13/45/celebration-1852926_960_720.jpg" alt="" id='ev-im2'/>
-            </div>
-
-          </div>
-        </div>
-      </section>
       <section className="faq wide faq-wide">
-        <div className="row">
-          <div className="col  l-0-2 l-8 p-4">
-            <h3>FAQ</h3>
-            <p className='p0'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            </p>
-            <Faq/>
-          </div>
-        </div>    
         <div className="row">
           <div className="col l-0-2 l-8 p-4">
             <h3>VISIT US</h3>

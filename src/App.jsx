@@ -12,9 +12,6 @@ import Confirm from './components/orders/Info/Confirm';
 import Status from './components/orders/Info/Status';
 
 import Menu from './components/pages/Menu';
-import Story from './components/pages/Story';
-import Events from './components/pages/Events';
-import Contact from './components/pages/Contact';
 
 
 function App() {
@@ -45,11 +42,7 @@ function App() {
             <Route path='status' element={<Status/>}/>
           </Route> */}
 
-        <Route path='/our-story' element={<Story/>}/>
-
         <Route path='/our-menu' element={<Menu/>}/>
-        <Route path='/events' element={<Events/>}/>
-        <Route path='/contact-us' element={<Contact/>}/>
 
       </Routes>
 

@@ -16,7 +16,7 @@ const Footer = () => {
               <ul>
                 <li><p>Address: 320 Lincoln Ave, Dragonedge, VN</p></li>
                 <li><p>Phone: (01) 503-45-8377</p></li>
-                <li><p>Email: restaurant@littlecrepe-vn.com</p></li>
+                <li><p>Email: </p></li>
               </ul>
             </div>
             <div className="col l-0-1 l-5">
@@ -37,7 +37,7 @@ const Footer = () => {
       </div>
       <div className="row copy">
         <div className="foot-line col l-12 p-4"></div>
-        <p className='col l-12 p-4'>(C) Copyright 2024, Litle Crepe VN.</p>
+        <p className='col l-12 p-4'>(C) Copyright 2024</p>
       </div>
       </div>
       <div className="copyright" style={{padding: "10px 10px", background: "var(--ac1)"}}>

@@ -30,7 +30,9 @@ const Location = () => {
       <div className="row">
         <div className="col l-12 p-4">
           <h2>Place a new order online</h2>
+          <br />
           <h4>Enter your location to see if we cater to your area</h4>
+          <p className="p0">Fast delivery to anywhere in Hanoi area.</p>
         </div>
       </div>
       <div className="row odlt-input">
@@ -70,8 +72,10 @@ const Location = () => {
     <div className="place-order">
       <div className="row">
         <div className="col l-12 p-4">
-          <h2>Review your order</h2>
-          <h4>Enter order and phone number to check your order status</h4>
+          <h2>Already placed an order</h2>
+          <br />
+          <h4>Check your order status</h4>
+          <p className="p0">Specify order information including letters and numbers.</p>
         </div>
       </div>
       <div className="row odlt-input">
@@ -84,7 +88,7 @@ const Location = () => {
       </div>
       <div className="row odlt-btn">
         <div className="col l-3 p-2">
-          <button className='btn1'>Check order status</button>
+          <button className='btn1'>Submit</button>
         </div>
       </div>
     </div>

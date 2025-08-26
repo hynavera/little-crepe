@@ -11,29 +11,18 @@ import PayInfo from './components/orders/Info/PayInfo';
 import Confirm from './components/orders/Info/Confirm';
 import Status from './components/orders/Info/Status';
 
-import Menu from './components/pages/Menu';
-
+import Garden from './components/pages/Garden';
+import Contact from './components/pages/Contact';
 
 function App() {
   return (
-    <BrowserRouter basename={"/little-crepe"}>
+    <BrowserRouter basename={"/little-flora"}>
       <Navbar/>
       <Routes>
         <Route path='/' element={<Home/>}>
 
 
-          {/* <Route path='/order' element={<OrderLayout/>}>
-            <Route index element={<Location/>}/>
-            <Route path='new-order' element={<NewOrder/>}/>
-            <Route path='customize' element={<Customize/>}/>
-            <Route path='payinfo' element={<PayInfo/>}/>
-            <Route path='confirm' element={<Confirm/>}/>
-            <Route path='status' element={<Status/>}/>
-          </Route> */}
-
-        </Route>
-
-        <Route path='/order' element={<OrderLayout/>}>
+          <Route path='/order' element={<OrderLayout/>}>
             <Route index element={<Location/>}/>
             <Route path='new-order' element={<NewOrder/>}/>
             <Route path='customize' element={<Customize/>}/>
@@ -42,7 +31,19 @@ function App() {
             <Route path='status' element={<Status/>}/>
           </Route>
 
-        <Route path='/our-menu' element={<Menu/>}/>
+        </Route>
+
+        {/* <Route path='/order' element={<OrderLayout/>}>
+            <Route index element={<Location/>}/>
+            <Route path='new-order' element={<NewOrder/>}/>
+            <Route path='customize' element={<Customize/>}/>
+            <Route path='payinfo' element={<PayInfo/>}/>
+            <Route path='confirm' element={<Confirm/>}/>
+            <Route path='status' element={<Status/>}/>
+          </Route> */}
+
+        <Route path='/our-garden' element={<Garden/>}/>
+        <Route path='/contact' element={<Contact/>}/>
 
       </Routes>
 

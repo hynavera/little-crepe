@@ -54,7 +54,7 @@ const PayInfo = () => {
               <label htmlFor="phone">Phone number</label>
             </div>
             <div className="col l-6 p-4">
-              <input type="phone" name='phone' placeholder='Mobile number' 
+              <input type="phone" name='phone' placeholder='Your mobile phone number' 
               value={contact.phone} onChange={handleChange}/>
             </div>
           </div>

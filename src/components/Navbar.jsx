@@ -25,16 +25,16 @@ const Navbar = () => {
             </Link>
           </li>
           <li onClick={checkHandler}>
-            <Link to="/our-menu">OUR MENU</Link>
+            <Link to="/our-garden">OUR GARDEN</Link>
           </li>
           <li onClick={checkHandler}>
-            <Link to="/our-story">OUR STORY</Link>
+            <Link to="/">OUR STORY</Link>
           </li>
           <li onClick={checkHandler}>
-            <Link to="/events">EVENTS</Link>
+            <Link to="/">EVENTS</Link>
           </li>
           <li onClick={checkHandler}>
-            <Link to="/contact-us">CONTACT</Link>
+            <Link to="/contact">CONTACT</Link>
           </li>
         </ul>
       </nav>
@@ -57,7 +57,7 @@ const Navbar = () => {
               <Link to="/">HOME</Link>
             </li>
             <li onClick={checkHandler}>
-              <Link to="/">OUR MENU</Link>
+              <Link to="/our-garden">OUR GARDEN</Link>
             </li>
             <li onClick={checkHandler}>
               <Link to="/">OUR STORY</Link>
@@ -66,7 +66,7 @@ const Navbar = () => {
               <Link to="/">EVENTS</Link>
             </li>
             <li onClick={checkHandler}>
-              <Link to="/">CONTACT</Link>
+              <Link to="/contact">CONTACT</Link>
             </li>
           </ul>
           <div className='side_foot'>
@@ -76,13 +76,13 @@ const Navbar = () => {
                   <img src={logoFoot} alt="" />
                 </div>
                 <ul>
-                  <li><p>Address: 320 Lincoln Ave, Long Bien, Hanoi</p></li>
-                  <li><p>Phone: (01) 503-45-8377</p></li>
-                  <li><p>Email: quatre-crepes@email.com</p></li>
+                  <li><p>Address: 21 St Dragonedge, Hanoi, VN</p></li>
+                  <li><p>Phone: </p></li>
+                  <li><p>Email: </p></li>
                 </ul>
                 <ul>
-                  <li><p>Opening hours: Mon - Sun: 2 PM - 10 PM</p></li>
-                  <li><p>Online service hours: Mon - Sun: 9 AM - 8 PM</p></li>
+                  <li><p>Opening </p></li>
+                  <li><p>Online </p></li>
                 </ul>
               </div>
               <div className="col p-4">
